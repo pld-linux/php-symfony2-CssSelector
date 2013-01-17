@@ -4,12 +4,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Symfony2 CssSelector Component
 Name:		php-symfony2-CssSelector
-Version:	2.1.4
+Version:	2.1.6
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	6b499f25ef341d86c912e17245a6d6c7
+# Source0-md5:	e0c7ebcb3bf78c97635c033c0ce63d52
 URL:		http://symfony.com/doc/current/components/css_selector.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
