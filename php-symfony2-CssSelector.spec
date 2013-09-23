@@ -1,15 +1,14 @@
-%define		status		stable
 %define		pearname	CssSelector
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
-Summary:	%{pearname} - Symfony2 CssSelector Component
+Summary:	Symfony2 CssSelector Component
 Name:		php-symfony2-CssSelector
-Version:	2.1.6
+Version:	2.3.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	e0c7ebcb3bf78c97635c033c0ce63d52
+# Source0-md5:	464e8627d679e6db35ff07164e7fa7dd
 URL:		http://symfony.com/doc/current/components/css_selector.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
@@ -22,20 +21,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Symfony2 CssSelector Component
-
-In PEAR status of this package is: %{status}.
+The CssSelector Component converts CSS selectors to XPath expressions.
 
 %prep
 %pear_package_setup
 
 # no packaging of tests
-rm -r .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests .
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist .
 
 # fixups
-mv .%{php_pear_dir}/Symfony/Component/%{pearname}/CHANGELOG.md .
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitattributes
 mv docs/%{pearname}/Symfony/Component/%{pearname}/* .
 
 %install
@@ -54,3 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/Symfony/Component/CssSelector/*.php
 %{php_pear_dir}/Symfony/Component/CssSelector/Exception
 %{php_pear_dir}/Symfony/Component/CssSelector/Node
+%{php_pear_dir}/Symfony/Component/CssSelector/Parser
+%{php_pear_dir}/Symfony/Component/CssSelector/XPath
