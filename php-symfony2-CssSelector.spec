@@ -9,7 +9,7 @@ License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
 # Source0-md5:	7d7e597dffb12313d816d4aa92755a42
-URL:		http://symfony.com/doc/current/components/css_selector.html
+URL:		http://symfony.com/doc/2.4/components/css_selector.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
