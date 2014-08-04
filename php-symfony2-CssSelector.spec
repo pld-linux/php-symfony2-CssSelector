@@ -7,7 +7,7 @@ Version:	2.4.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
-Source0:	https://github.com/symfony/CssSelector/archive/v%{version}/%{pearname}-%{version}.tar.gz
+Source0:	https://github.com/symfony/%{pearname}/archive/v%{version}/%{pearname}-%{version}.tar.gz
 # Source0-md5:	f9946fb2e5d06bd862b3c39f361fe672
 URL:		http://symfony.com/doc/2.4/components/css_selector.html
 BuildRequires:	phpab
