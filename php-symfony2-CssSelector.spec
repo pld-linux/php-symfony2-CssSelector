@@ -22,6 +22,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+The CssSelector Component converts CSS selectors to XPath expressions.
 
 %prep
 %setup -q -n %{pearname}-%{version}
