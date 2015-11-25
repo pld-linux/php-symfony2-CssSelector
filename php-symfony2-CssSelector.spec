@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 CssSelector Component
 Name:		php-symfony2-CssSelector
-Version:	2.7.5
+Version:	2.7.7
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	b60cb748ddae510188707e4bbd743651
+# Source0-md5:	6d2b7ee9bb76cc18956250d8b03b356d
 URL:		http://symfony.com/doc/2.7/components/css_selector.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -28,7 +28,7 @@ The CssSelector Component converts CSS selectors to XPath expressions.
 %setup -q -n css-selector-%{version}
 
 %build
-phpab -n -e '*/Tests/*' -o autoloader.php .
+phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
