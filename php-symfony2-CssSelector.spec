@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 CssSelector Component
 Name:		php-symfony2-CssSelector
-Version:	2.7.7
+Version:	2.7.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	6d2b7ee9bb76cc18956250d8b03b356d
+# Source0-md5:	dea659cbfd85cfd6b478b0b16b36626f
 URL:		http://symfony.com/doc/2.7/components/css_selector.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
