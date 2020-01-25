@@ -1,6 +1,5 @@
 %define		package	CssSelector
 %define		php_min_version 5.3.9
-%include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 CssSelector Component
 Name:		php-symfony2-CssSelector
 Version:	2.7.8
