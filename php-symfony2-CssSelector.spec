@@ -2,12 +2,12 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 CssSelector Component
 Name:		php-symfony2-CssSelector
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	dea659cbfd85cfd6b478b0b16b36626f
+# Source0-md5:	2d576a043bac6e3dbf86c301bec5fbee
 URL:		http://symfony.com/doc/2.7/components/css_selector.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
